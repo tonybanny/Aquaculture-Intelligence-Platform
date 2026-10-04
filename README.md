@@ -1,64 +1,329 @@
-# Digital Apps Library
-🌊 AQUA_BRU: Advanced Aquaculture Water Quality Intelligence Platform
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUA_BRU - Advanced Aquaculture Water Quality Intelligence Platform</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+        
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .badge-blue { background-color: #1e40af; color: #fff; }
+        .badge-green { background-color: #166534; color: #fff; }
+        .badge-yellow { background-color: #ca8a04; color: #fff; }
+        .badge-success { background-color: #15803d; color: #fff; }
+        
+        .section {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .section h2 {
+            color: #58a6ff;
+            border-bottom: 2px solid #21262d;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .section h3 {
+            color: #79c0ff;
+            margin-top: 20px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #58a6ff;
+            box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .feature-title {
+            color: #58a6ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        code {
+            background-color: #161b22;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #79c0ff;
+        }
+        
+        pre {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 16px;
+            overflow-x: auto;
+        }
+        
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table th,
+        table td {
+            border: 1px solid #30363d;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table th {
+            background-color: #161b22;
+            color: #58a6ff;
+            font-weight: bold;
+        }
+        
+        table tr:hover {
+            background-color: #161b22;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li:before {
+            content: "▸ ";
+            color: #58a6ff;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background-color: #1e3a8a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .stat-label {
+            color: #e0e7ff;
+            margin-top: 5px;
+        }
+    </style></head><body>
+    <div class="header">
+        <h1>🌊 AQUA_BRU</h1>
+        <p style="font-size: 1.2em; margin: 10px 0;">Advanced Aquaculture Water Quality Intelligence Platform</p>
+        <div class="badges">
+            <span class="badge badge-blue">R 4.0+</span>
+            <span class="badge badge-green">Shiny 1.7+</span>
+            <span class="badge badge-yellow">MIT License</span>
+            <span class="badge badge-success">Production Ready</span>
+        </div>
+    </div>
 
-🎯 Overview
-AQUA_BRU is a comprehensive, production-ready Shiny application for real-time water quality monitoring and predictive analytics in aquaculture operations across Brunei Darussalam. The platform integrates advanced machine learning, geospatial analysis, and interactive data visualization to support data-driven decision-making in aquaculture management.
+    <div class="section">
+        <h2>🎯 Overview</h2>
+        <p><strong>AQUA_BRU</strong> is a comprehensive, production-ready Shiny application for real-time water quality monitoring and predictive analytics in aquaculture operations across Brunei Darussalam. The platform integrates advanced machine learning, geospatial analysis, and interactive data visualization to support data-driven decision-making in aquaculture management.</p>
+    </div>
 
-✨ Key Features
-📊 Core Analytics Modules
-Real-time Water Quality Monitoring: Track 16+ water quality parameters across multiple stations
-Interactive Geospatial Mapping: Leaflet-based maps with station performance overlays
-Advanced ML Predictions: Ensemble models (Random Forest, SVM, GBM) for productivity forecasting
-Monte Carlo Risk Analysis: Probabilistic modeling for uncertainty quantification
-Ordination Analysis: PCA/RDA/CCA for multivariate pattern detection
-Socio-Economic Assessment: Revenue analysis and economic impact modeling
-🤖 Machine Learning Engine
-4 ML Models: Random Forest, SVM, Gradient Boosting, Neural Networks
-Ensemble Accuracy: 86.3% (validated on production data)
-Real-time Predictions: <1 second processing time
-SHAP Values: Model interpretability and feature importance
-Drift Detection: Automated model performance monitoring
-A/B Testing: Continuous model comparison framework
-🗺️ Geospatial Intelligence
-19+ Monitoring Stations: Comprehensive coverage across Brunei
-Performance Heatmaps: Color-coded quality scores
-Interactive Controls: Dynamic filtering and station selection
-Economic Overlays: Production and revenue data integration
-Auto-refresh: Real-time data synchronization
-📈 Advanced Visualizations
-Plotly Dashboards: Interactive 3D charts and heatmaps
-Radar Charts: Multi-parameter performance comparison
-Time Series: Trend analysis and forecasting
-ROC Curves: Model performance validation
-Confidence Intervals: Uncertainty visualization
+    <div class="section">
+        <h2>✨ Key Features</h2>
+        
+        <h3>📊 Core Analytics Modules</h3>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📡</div>
+                <div class="feature-title">Real-time Monitoring</div>
+                <p>Track 16+ water quality parameters across multiple stations</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <div class="feature-title">Geospatial Mapping</div>
+                <p>Leaflet-based interactive maps with performance overlays</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-title">ML Predictions</div>
+                <p>Ensemble models for productivity forecasting</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎲</div>
+                <div class="feature-title">Risk Analysis</div>
+                <p>Monte Carlo simulations for uncertainty quantification</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">Ordination Analysis</div>
+                <p>PCA/RDA/CCA for multivariate pattern detection</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <div class="feature-title">Economic Assessment</div>
+                <p>Revenue analysis and impact modeling</p>
+            </div>
+        </div>
 
-🚀 Installation
-Prerequisites
-# Required R version
+        <h3>🤖 Machine Learning Engine</h3>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">4</div>
+                <div class="stat-label">ML Models</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">86.3%</div>
+                <div class="stat-label">Ensemble Accuracy</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">&lt;1s</div>
+                <div class="stat-label">Processing Time</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">19+</div>
+                <div class="stat-label">Monitoring Stations</div>
+            </div>
+        </div>
+
+        <ul>
+            <li>Random Forest, SVM, Gradient Boosting, Neural Networks</li>
+            <li>SHAP Values for model interpretability</li>
+            <li>Automated drift detection and performance monitoring</li>
+            <li>A/B testing framework for continuous improvement</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Installation</h2>
+        
+        <h3>Prerequisites</h3>
+        <pre><code># Required R version
 R >= 4.0.0
+
 # Core dependencies
 install.packages(c(
   "shiny", "shinydashboard", "bslib",
   "DT", "plotly", "ggplot2", "tidyverse",
   "leaflet", "vegan", "randomForest",
-  "caret", "gbm", "e1071", "forecast"))
-Quick Start
-# Clone the repository
+  "caret", "gbm", "e1071", "forecast"
+))</code></pre>
+
+        <h3>Quick Start</h3>
+        <pre><code># Clone the repository
 git clone https://github.com/yourusername/aqua_bru.git
 cd aqua_bru
+
 # Install all dependencies
 source("install_dependencies.R")
-# Run the application
-shiny::runApp("app.R")
-Docker Deployment (Recommended)
-# Build the Docker image
-docker build -t aqua_bru .
-# Run the container
-docker run -p 3838:3838 aqua_bru
-Access the app at http://localhost:3838
 
-📁 Project Structure
-aqua_bru/
+# Run the application
+shiny::runApp("app.R")</code></pre>
+
+        <h3>Docker Deployment (Recommended)</h3>
+        <pre><code># Build the Docker image
+docker build -t aqua_bru .
+
+# Run the container
+docker run -p 3838:3838 aqua_bru</code></pre>
+        <p>Access the app at <code>http://localhost:3838</code></p>
+    </div>
+      docker run -p 3838:3838 aqua_bru</code></pre>
+        <p>Access the app at <code>http://localhost:3838</code></p>
+    </div>
+
+    <div class="section">
+        <h2>📁 Project Structure</h2>
+        <pre><code>aqua_bru/
 ├── app.R                    # Main application file
 ├── data/
 │   ├── station_data.csv     # Water quality measurements
@@ -73,263 +338,393 @@ aqua_bru/
 ├── tests/
 │   └── test_functions.R     # Unit tests
 ├── Dockerfile               # Container configuration
-└── README.md                # This file
+└── README.md                # This file</code></pre>
+    </div>
 
-🎮 Usage Guide
-1️⃣ Data Import
-Upload your own water quality data:
-# Supported formats: CSV, Excel, TSV# Required columns: parameter, station_name, value# Optional: date, units, coordinates
-The app features intelligent column detection and flexible mapping for various data formats.
-2️⃣ Dashboard Navigation
-Tab	Description	Key Features
-Home	Welcome screen	Quick stats, feature overview
-Overview	Data summary	Parameter statistics, compliance rates
-Geospatial	Interactive map	Station locations, quality scores, filters
-Parameter Comparison	Visualizations	Bar charts, radar plots, trend analysis
-Heatmap & Scores	Performance matrix	Station rankings, compliance heatmap
-Ordination	Multivariate analysis	PCA/RDA/CCA plots, loadings
-Socio-Economic	Economic analysis	Revenue projections, cost-benefit
-ML Simulation	Predictive modeling	Forecasts, alerts, optimization
-Data & Download	Export tools	CSV/Excel/PDF downloads
-3️⃣ Machine Learning Predictions
-# Select station and culture type
-selected_station <- "Pure Salmon Brunei"
-culture_type <- "Tilapia"
-# Run ML prediction
-results <- predict_aquaculture_outcomes(
-  water_params = current_params,
-  culture_type = culture_type,
-  stocking_density = 100,
-  feed_quality = 0.9,
-  season = "Dry")
-# View predictions
-print(results$predictions$productivity)  # kg/ha/day
-print(results$risk_assessment$overall_risk)  # Risk score
-4️⃣ Monte Carlo Simulation
-# Run 1000 Monte Carlo iterations
-mc_results <- monte_carlo_simulation(
-  water_params = current_params,
-  n_simulations = 1000,
-  culture_type = "Shrimp")
-# Extract risk metrics
-mc_results$risk_metrics$productivity_below_target
-mc_results$risk_metrics$overall_success_probability
+    <div class="section">
+        <h2>🎮 Usage Guide</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📤</div>
+                <div class="feature-title">1. Data Import</div>
+                <p>Upload your water quality data in CSV, Excel, or TSV format</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <div class="feature-title">2. Geospatial Analysis</div>
+                <p>Visualize station locations and performance on interactive maps</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-title">3. ML Predictions</div>
+                <p>Run predictive models for productivity and risk assessment</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">4. Export Results</div>
+                <p>Download analysis results in multiple formats</p>
+            </div>
+        </div>
+    </div>
 
-📊 Data Specifications
-Water Quality Parameters
-Parameter	Unit	Optimal Range	Critical Threshold
-Temperature	°C	26-30	>35 or <20
-pH	-	7.0-8.0	>9.0 or <6.0
-Dissolved Oxygen	mg/L	6-8	<4.0
-Ammonia (NH₃)	mg/L	0-0.05	>0.1
-Nitrate (NO₃)	mg/L	0-3.0	>10.0
-Total Phosphate	mg/L	0-0.5	>1.0
-Station Data Format
-parameter,Station_A,Station_B,Station_C
-Temperature (Deg C),29.2,28.5,30.1
-pH,7.8,7.6,8.1
-Dissolved Oxygen (mg/L),6.2,5.8,7.1
-...
+    <div class="section">
+        <h2>📊 Data Specifications</h2>
+        
+        <h3>Water Quality Parameters</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Unit</th>
+                    <th>Optimal Range</th>
+                    <th>Critical Threshold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Temperature</td>
+                    <td>°C</td>
+                    <td>26-30</td>
+                    <td>&gt;35 or &lt;20</td>
+                </tr>
+                <tr>
+                    <td>pH</td>
+                    <td>-</td>
+                    <td>7.0-8.0</td>
+                    <td>&gt;9.0 or &lt;6.0</td>
+                </tr>
+                <tr>
+                    <td>Dissolved Oxygen</td>
+                    <td>mg/L</td>
+                    <td>6-8</td>
+                    <td>&lt;4.0</td>
+                </tr>
+                <tr>
+                    <td>Ammonia (NH₃)</td>
+                    <td>mg/L</td>
+                    <td>0-0.05</td>
+                    <td>&gt;0.1</td>
+                </tr>
+                <tr>
+                    <td>Nitrate (NO₃)</td>
+                    <td>mg/L</td>
+                    <td>0-3.0</td>
+                    <td>&gt;10.0</td>
+                </tr>
+                <tr>
+                    <td>Total Phosphate</td>
+                    <td>mg/L</td>
+                    <td>0-0.5</td>
+                    <td>&gt;1.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-🔧 Configuration
-Custom Thresholds
-# Define species-specific thresholds
-species_thresholds <- list(
-  "Tilapia" = tibble(
-    parameter = c("Temperature", "pH", "DO", "Ammonia"),
-    min = c(22, 6.5, 5, 0),
-    max = c(32, 9.0, 8, 0.2)
-  ),
-  "Shrimp" = tibble(
-    parameter = c("Temperature", "pH", "DO", "Ammonia"),
-    min = c(26, 7.5, 4, 0),
-    max = c(32, 8.5, 6, 0.05)
-  ))
-ML Model Parameters
-# Random Forest configuration
-rf_params <- list(
-  ntree = 1000,
-  mtry = 5,
-  nodesize = 10)
-# Gradient Boosting configuration
-gbm_params <- list(
-  n.trees = 2000,
-  interaction.depth = 6,
-  shrinkage = 0.005)
+    <div class="section">
+        <h2>📈 Performance Metrics</h2>
+        
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">86.3%</div>
+                <div class="stat-label">Ensemble Accuracy</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">&lt;1s</div>
+                <div class="stat-label">Prediction Time</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">19+</div>
+                <div class="stat-label">Monitoring Stations</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">16+</div>
+                <div class="stat-label">Parameters Tracked</div>
+            </div>
+        </div>
 
-📈 Performance Metrics
-Application Benchmarks
-Page Load Time: <2 seconds
-Data Processing: 10,000 rows/second
-ML Prediction: 0.23 seconds/prediction
-Map Rendering: <1 second (1000+ markers)
-Concurrent Users: Tested up to 50
-ML Model Performance
-Model	Accuracy	Precision	Recall	F1-Score	AUC-ROC
-Random Forest	84.7%	83.1%	85.6%	84.3%	0.847
-SVM	79.2%	77.5%	80.3%	78.9%	0.792
-Gradient Boosting	82.5%	81.2%	83.8%	82.5%	0.825
-Ensemble	86.3%	85.1%	87.4%	86.2%	0.863
+        <h3>ML Model Performance</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Accuracy</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                    <th>AUC-ROC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>84.7%</td>
+                    <td>83.1%</td>
+                    <td>85.6%</td>
+                    <td>84.3%</td>
+                    <td>0.847</td>
+                </tr>
+                <tr>
+                    <td>SVM</td>
+                    <td>79.2%</td>
+                    <td>77.5%</td>
+                    <td>80.3%</td>
+                    <td>78.9%</td>
+                    <td>0.792</td>
+                </tr>
+                <tr>
+                    <td>Gradient Boosting</td>
+                    <td>82.5%</td>
+                    <td>81.2%</td>
+                    <td>83.8%</td>
+                    <td>82.5%</td>
+                    <td>0.825</td>
+                </tr>
+                <tr style="background-color: #c8e6c9;">
+                    <td><strong>Ensemble</strong></td>
+                    <td><strong>86.3%</strong></td>
+                    <td><strong>85.1%</strong></td>
+                    <td><strong>87.4%</strong></td>
+                    <td><strong>86.2%</strong></td>
+                    <td><strong>0.863</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-🛠️ Advanced Features
-Real-time Alerts
-# Configure alert thresholds
-alert_config <- list(
-  critical = list(DO = 4, ammonia = 0.1),
-  high = list(temperature = 32, pH = 8.5),
-  medium = list(nitrate = 5, turbidity = 25))
-# Generate alerts
-current_alerts <- generate_alerts(
-  current_conditions = water_params,
-  thresholds = alert_config)
-Custom Visualizations
-# Create custom parameter plot
-custom_plot <- ggplot(data, aes(x = station, y = value)) +
-  geom_col(fill = "#2196F3") +
-  geom_hline(yintercept = threshold, color = "red") +
-  theme_minimal() +
-  labs(title = "Custom Water Quality Metric")
-API Integration
-# Future feature: REST API endpoints
-GET /api/v1/predictions
-POST /api/v1/upload
-GET /api/v1/stations/{id}
+    <div class="section">
+        <h2>📚 References</h2>
+        
+        <h3>Scientific Literature</h3>
+        <ol>
+            <li><strong>FAO Aquaculture Guidelines</strong> - Water quality management in aquaculture systems
+                <ul>
+                    <li>Boyd, C.E., & Tucker, C.S. (2014). <em>Handbook for Aquaculture Water Quality</em></li>
+                    <li>FAO. (2020). <em>The State of World Fisheries and Aquaculture 2020</em></li>
+                </ul>
+            </li>
+            <li><strong>Global Aquaculture Alliance (GAA)</strong> - Best Aquaculture Practices certification standards</li>
+            <li><strong>Dissolved Oxygen Management</strong>
+                <ul>
+                    <li>Stone, N., et al. (2013). <em>Interpretation of Water Analysis Reports for Fish Culture</em></li>
+                </ul>
+            </li>
+            <li><strong>Machine Learning in Aquaculture</strong>
+                <ul>
+                    <li>Ahmed, N., et al. (2022). Application of artificial intelligence in aquaculture: A review. <em>Aquaculture</em>, 540, 736724</li>
+                </ul>
+            </li>
+            <li><strong>Brunei-Specific Research</strong>
+                <ul>
+                    <li>SEAFDEC. (2019). <em>Aquaculture Development in Brunei Darussalam</em></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
 
-🤝 Contributing
-We welcome contributions! Please follow these guidelines:
-Development Workflow
-# Fork the repository
+    <div class="section">
+        <h2>🤝 Contributing</h2>
+        
+        <p>We welcome contributions! Please follow these guidelines:</p>
+        
+        <h3>Development Workflow</h3>
+        <pre><code># Fork the repository
 git checkout -b feature/your-feature-name
+
 # Make changes and commit
 git commit -m "Add: description of changes"
+
 # Push and create pull request
-git push origin feature/your-feature-name
-Code Style
-Follow Tidyverse Style Guide
-Use lintr for code quality checks
-Add unit tests for new functions
-Update documentation
-Testing
-# Run all tests
-testthat::test_dir("tests/")
-# Test specific module
-testthat::test_file("tests/test_ml_models.R")
+git push origin feature/your-feature-name</code></pre>
 
-📚 References
-Scientific Literature
-FAO Aquaculture Guidelines - Water quality management in aquaculture systems
-oBoyd, C.E., & Tucker, C.S. (2014). Handbook for Aquaculture Water Quality. Craftmaster Printers.
-oFAO. (2020). The State of World Fisheries and Aquaculture 2020. Food and Agriculture Organization.
-Global Aquaculture Alliance (GAA) - Best Aquaculture Practices certification standards
-oGAA. (2021). Best Aquaculture Practices Standards. Global Aquaculture Alliance.
-oBoyd, C.E. (2017). General relationship between water quality and aquaculture performance in ponds. Fish Physiology.
-Dissolved Oxygen Management
-oRakocy, J.E., & McGinty, A.S. (1989). Pond Culture of Tilapia. Southern Regional Aquaculture Center Publication No. 280.
-oStone, N., et al. (2013). Interpretation of Water Analysis Reports for Fish Culture. SRAC Publication No. 4606.
-pH and Alkalinity in Aquaculture
-oTucker, C.S., & Hargreaves, J.A. (2004). Environmental Best Management Practices for Aquaculture. Blackwell Publishing.
-oWurts, W.A. (1995). Using salt to reduce handling stress in channel catfish. World Aquaculture, 26(3), 30-31.
-Ammonia Toxicity Studies
-oHargreaves, J.A., & Tucker, C.S. (2004). Managing ammonia in fish ponds. SRAC Publication No. 4603.
-oColt, J., & Armstrong, D. (1981). Nitrogen toxicity to fish, crustaceans and mollusks. American Fisheries Society.
-Brunei-Specific Research
-oSEAFDEC. (2019). Aquaculture Development in Brunei Darussalam. Southeast Asian Fisheries Development Center.
-oDepartment of Fisheries, Brunei. (2020). Annual Fisheries Statistics Report.
-Machine Learning in Aquaculture
-oAhmed, N., et al. (2022). Application of artificial intelligence in aquaculture: A review. Aquaculture, 540, 736724.
-oShi, C., et al. (2021). Development of machine learning models for aquaculture water quality prediction. Computers and Electronics in Agriculture.
-Water Quality Standards
-oBritish Columbia. (2020). Water Quality Guidelines for Aquatic Life. Ministry of Environment.
-oUSEPA. (2019). National Recommended Water Quality Criteria. United States Environmental Protection Agency.
-Multivariate Analysis in Aquaculture
-oLegendre, P., & Legendre, L. (2012). Numerical Ecology (3rd ed.). Elsevier.
-oTer Braak, C.J.F. (1986). Canonical correspondence analysis: a new eigenvector technique for multivariate direct gradient analysis. Ecology, 67(5), 1167-1179.
-Economic Analysis
-oAnderson, J.L., et al. (2019). The Fishery Performance Indicators: A Management Tool for Triple Bottom Line Outcomes. PLOS ONE.
-oFAO. (2018). Meeting the sustainable development goals. Food and Agriculture Organization.
-🔗 External Resources
-Databases & APIs
-NOAA National Estuarine Research Reserve System - Water quality monitoring data
-World Bank Open Data - Aquaculture production statistics
-FAO FishStatJ - Global fisheries and aquaculture statistics
-Software & Tools
-R Packages Used:
-oshiny (1.7.4) - Web application framework
-orandomForest (4.7.1) - Random forest algorithms
-ovegan (2.6.4) - Community ecology package
-oleaflet (2.1.2) - Interactive maps
-oplotly (4.10.1) - Interactive visualizations
-Online Communities
-R-SIG-Aquaculture - R Special Interest Group for Aquaculture
-Stack Overflow - Programming Q&A ([r] [shiny] tags)
-RStudio Community - Shiny application development discussions
+        <h3>Code Style</h3>
+        <ul>
+            <li>Follow <a href="https://style.tidyverse.org/">Tidyverse Style Guide</a></li>
+            <li>Use <code>lintr</code> for code quality checks</li>
+            <li>Add unit tests for new functions</li>
+            <li>Update documentation</li>
+        </ul>
+    </div>
 
-📧 Contact & Support
-Technical Support
-Email: support@aqua-bru.org
-GitHub Issues: github.com/yourusername/aqua_bru/issues
-Documentation: docs.aqua-bru.org
-Contributing
-We welcome contributions! See CONTRIBUTING.md for guidelines.
-Citation
-If you use AQUA_BRU in your research, please cite:
-@software{aqua_bru_2024,
-  author = {Your Name},
-  title = {AQUA\_BRU: Advanced Aquaculture Water Quality Intelligence Platform},
-  year = {2024},
-  url = {https://github.com/yourusername/aqua_bru},
-  version = {2.3.1}
-}
+    <div class="section">
+        <h2>📧 Contact & Support</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📧</div>
+                <div class="feature-title">Email Support</div>
+                <p><a href="mailto:admin@nexosenvironmental.org">admin@nexosenvironmental.org</a></p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🐛</div>
+                <div class="feature-title">GitHub Issues</div>
+                <p><a href="https://github.com/tonybanny/aqua_bru/issues">Report Bugs</a></p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <div class="feature-title">Documentation</div>
+                <p><a href="admin@nexosenvironmental.org">docs.aqua-bru.org</a></p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <div class="feature-title">Community</div>
+                <p><a href="https://twitter.com/tbd">@tbd</a></p>
+            </div>
+        </div>
+    </div>
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-Key Points:
-✅ Free for commercial and non-commercial use
-✅ Modification and distribution allowed
-✅ Attribution required
-❌ No warranty provided
+    <div class="section">
+        <h2>📝 License</h2>
+        
+        <p>This project is licensed under the <strong>MIT License</strong></p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="margin-top: 0;">Key Points:</h3>
+            <ul>
+                <li>✅ Free for commercial and non-commercial use</li>
+                                <li>✅ Modification and distribution allowed</li>
+                <li>✅ Attribution required</li>
+                <li>❌ No warranty provided</li>
+            </ul>
+        </div>
+    </div>
 
-🙏 Acknowledgments
-Special thanks to:
-Department of Fisheries, Brunei Darussalam - Data provision and domain expertise
-Universiti Brunei Darussalam - Research collaboration
-SEAFDEC - Technical guidance and training
-R Community - Open-source packages and support
-Beta Testers - Valuable feedback and bug reports
-📊 Version History
-Version	Date	Key Changes
-2.3.1	2024-01-08	Production release with ML ensemble
-2.2.3	2023-12-22	Added ordination analysis
-2.1.8	2023-12-01	Geospatial module enhancement
-2.0.0	2023-11-15	Major refactor with bslib integration
-1.5.0	2023-10-01	Initial ML module
-1.0.0	2023-08-15	First stable release
+    <div class="section">
+        <h2>🙏 Acknowledgments</h2>
+        
+        <p>Special thanks to:</p>
+        <ul>
+            <li><strong>Department of Fisheries, Brunei Darussalam</strong> - Data provision and domain expertise</li>
+            <li><strong>Universiti Brunei Darussalam</strong> - Research collaboration</li>
+            <li><strong>SEAFDEC</strong> - Technical guidance and training</li>
+            <li><strong>R Community</strong> - Open-source packages and support</li>
+            <li><strong>Beta Testers</strong> - Valuable feedback and bug reports</li>
+        </ul>
+    </div>
 
-🚀 Roadmap
-Q1 2024
-Real-time data streaming integration
-Mobile-responsive dashboard redesign
-Multi-language support (Malay, Chinese)
-Advanced forecasting with LSTM models
-Q2 2024
-IoT sensor integration
-Cloud deployment (AWS/Azure)
-API development for third-party access
-Automated report scheduling
-Q3 2024
-Blockchain-based data verification
-Satellite imagery integration
-Climate change scenario modeling
-Community collaboration features
+    <div class="section">
+        <h2>📊 Version History</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Date</th>
+                    <th>Key Changes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="highlight">2.3.1</span></td>
+                    <td>2024-01-08</td>
+                    <td>Production release with ML ensemble</td>
+                </tr>
+                <tr>
+                    <td>2.2.3</td>
+                    <td>2023-12-22</td>
+                    <td>Added ordination analysis</td>
+                </tr>
+                <tr>
+                    <td>2.1.8</td>
+                    <td>2023-12-01</td>
+                    <td>Geospatial module enhancement</td>
+                </tr>
+                <tr>
+                    <td>2.0.0</td>
+                    <td>2023-11-15</td>
+                    <td>Major refactor with bslib integration</td>
+                </tr>
+                <tr>
+                    <td>1.5.0</td>
+                    <td>2023-10-01</td>
+                    <td>Initial ML module</td>
+                </tr>
+                <tr>
+                    <td>1.0.0</td>
+                    <td>2023-08-15</td>
+                    <td>First stable release</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-⚡ Quick Links
-Live Demo: admin@nexosenvironmental.org
-Documentation: admin@nexosenvironmental.org 
-Tutorial Videos: 
-Blog: 
-Twitter: 
+    <div class="section">
+        <h2>🚀 Roadmap</h2>
+        
+        <h3>Q1 2024</h3>
+        <ul>
+            <li>Real-time data streaming integration</li>
+            <li>Mobile-responsive dashboard redesign</li>
+            <li>Multi-language support (Malay, Chinese)</li>
+            <li>Advanced forecasting with LSTM models</li>
+        </ul>
+        
+        <h3>Q2 2024</h3>
+        <ul>
+            <li>IoT sensor integration</li>
+            <li>Cloud deployment (AWS/Azure)</li>
+            <li>API development for third-party access</li>
+            <li>Automated report scheduling</li>
+        </ul>
+        
+        <h3>Q3 2024</h3>
+        <ul>
+            <li>Blockchain-based data verification</li>
+            <li>Satellite imagery integration</li>
+            <li>Climate change scenario modeling</li>
+            <li>Community collaboration features</li>
+        </ul>
+    </div>
 
-Built with ❤️ for sustainable aquaculture in Brunei Darussalam 🇧🇳 🌊 🐟
+    <div class="section">
+        <h2>⚡ Quick Links</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-title">Live Demo</div>
+                <p><a href="https://demo.aqua-bru.org">demo.aqua-bru.org</a></p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <div class="feature-title">Documentation</div>
+                <p><a href="https://docs.aqua-bru.org">docs.aqua-bru.org</a></p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎥</div>
+                <div class="feature-title">Tutorial Videos</div>
+                <p><a href="https://youtube.com/@aqua-bru">YouTube Channel</a></p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <div class="feature-title">Blog</div>
+                <p><a href="https://blog.aqua-bru.org">blog.aqua-bru.org</a></p>
+            </div>
+        </div>
+    </div>
 
-Last Updated: January 2025
+    <div style="text-align: center; padding: 40px; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); border-radius: 10px; margin: 40px 0;">
+        <h2 style="color: white; margin: 0;">Built with ❤️ for sustainable aquaculture in Brunei Darussalam</h2>
+        <p style="color: #e0e7ff; font-size: 2em; margin: 20px 0;">🇧🇳 🌊 🐟</p>
+    </div>
 
+    <div style="text-align: center; padding: 20px; color: #666;">
+        <p><em>Last Updated: January 2024</em></p>
+        <p>
+            <a href="https://github.com/tonybanny/aqua_bru">GitHub</a> | 
+            <a href="admin@nexosenvironmental.org">Documentation</a> | 
+            <a href="mailto:admin@nexosenvironmental.org">Support</a> | 
+            <a href="https://twitter.com/tbd">Twitter</a>
+        </p>
+    </div>
+</body></html>
